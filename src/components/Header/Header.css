@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #009C46;
+    width: 100%;
+   
+}
+
+h1{
+    font-size: 24px;
+
+}
+
+.title{
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.title:hover{
+    color: #D62618;
+    text-shadow: 2px 2px white;
+}
+
+.headerFlex{
+    display: flex;
+    height: 80px;
+}
+
+@media screen and (min-width: 600px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        background-color: #009C46;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}

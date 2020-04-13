@@ -40,16 +40,18 @@ class Header extends Component {
 
   render() {
     return (
-      <header>
-        <h1>
-          <Link to='/'>
-            Spaced repetition
-          </Link>
-        </h1>
-        {TokenService.hasAuthToken()
-          ? this.renderLogoutLink()
-          : this.renderLoginLink()}
-      </header>
+      <div className='headerFlex'>
+        <header>
+          <h1 >
+            <Link className='title' to='/'>
+              Spaced repetition
+            </Link>
+          </h1>
+          {TokenService.hasAuthToken()
+            ? this.renderLogoutLink()
+            : this.renderLoginLink()}
+        </header>
+      </div>
     );
   }
 }
