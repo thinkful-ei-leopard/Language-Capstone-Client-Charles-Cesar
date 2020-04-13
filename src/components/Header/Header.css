@@ -1,20 +1,39 @@
 header{
-    display: flex;
+    display: grid;
     justify-content: space-around;
     background-color: #009C46;
     width: 100%;
    
 }
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
 
 h1{
-    font-size: 24px;
+    font-size: 30px;
+    margin: 0px;
 
+}
+
+.navLink{
+    
+    color: white;
+}
+
+.navLink:hover{
+    color: #D62618;
+    text-shadow: 1px 1px white;
 }
 
 .title{
     text-decoration: none;
     color: white;
     text-shadow: 2px 2px black;
+    /* font-family: 'Baloo Paaji 2', cursive;
+    font-weight: 500; */
 }
 .title:hover{
     color: #D62618;
@@ -29,11 +48,22 @@ h1{
 @media screen and (min-width: 600px) {
     header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         background-color: #009C46;
     }
 
     h1{
         font-size: 40px;
+        justify-self: center;
+        margin: auto;
     }
+     nav{
+         align-items: center;
+         justify-self: flex-start;
+     }
+     .navLink{
+         font-size: 28px;
+         margin-left: 20px;
+         
+     }
 }
