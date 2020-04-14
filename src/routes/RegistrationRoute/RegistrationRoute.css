@@ -1,3 +1,16 @@
+
+/* .register::after{
+    background-image: url('../../pictures/mflag.jpg');
+    background-repeat: no-repeat;
+    content: "";
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;  
+} */
 .register{
     display: grid;
     justify-content: center;
@@ -8,7 +21,7 @@
     justify-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    margin-top: 25px;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.171) ;
     border-bottom: thin;
     border-radius: 5px;
@@ -17,6 +30,10 @@
 
 h2{
     font-size: 28px;
+    margin: 0px;
+}
+
+p{
     margin: 0px;
 }
 
@@ -50,7 +67,7 @@ input[type=text], input[type=password] {
 
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     .register{
         display: grid;
         justify-content: center;
