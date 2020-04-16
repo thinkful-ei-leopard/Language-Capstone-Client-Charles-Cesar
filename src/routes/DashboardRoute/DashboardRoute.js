@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import Dashboard from '../../components/Dashboard/Dashboard'
+import LanguageContext from '../../contexts/LanguageContext'
 
 class DashboardRoute extends Component {
+  static contextType = LanguageContext;
+
   render() {
     return (
       <section>
-        <h2> Spanish words to practice</h2>
         <Dashboard />
       </section>
     );

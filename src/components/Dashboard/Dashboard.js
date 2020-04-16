@@ -5,6 +5,7 @@ import UserContext from '../../contexts/UserContext'
 import './Dashboard.css'
 import LanguageContext from '../../contexts/LanguageContext'
 import LanguageApiService from '../../services/language-api-service'
+import WordList from './../WordList/WordList'
 
 export default class Dashboard extends React.Component{
 
@@ -24,13 +25,18 @@ componentDidMount(){
   }
   
     render(){
-        console.log(this.context.language.name);
         
     return(
-<div>
-    <h3>{this.context.language.name}</h3>
-    
-
-</div>
+        <div>
+            <h2>{this.context.language.name} words to practice</h2>
+            <h3>Total correct answers: {this.context.language.total_score}</h3>
+            <div className='wordBox'>
+            <ul>
+            <WordList />
+            </ul>
+            </div>
+            
+            <Link to=''>Start Practicing</Link>
+        </div>
     )}
 }
