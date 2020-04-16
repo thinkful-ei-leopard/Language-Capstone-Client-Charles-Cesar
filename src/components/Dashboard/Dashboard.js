@@ -28,13 +28,14 @@ componentDidMount(){
         
     return(
         <div>
-            <h2>{this.context.language.name} words to practice</h2>
-            <h3>Total correct answers: {this.context.language.total_score}</h3>
+            <h2>{this.context.language.name}</h2>
+            <h3>Words to practice</h3>
+            <h4>Total correct answers: {this.context.language.total_score}</h4>
             <div className='wordBox'>
                 <WordList />
             </div>
             
-            <Link to=''>Start Practicing</Link>
+            <Link to='/learn'>Start practicing</Link>
         </div>
     )}
 }
