@@ -1,0 +1,15 @@
+.wordListItem{
+    display: grid;
+    justify-items: center;
+    /* grid-template-rows: repeat(3, auto); */
+    grid-template-columns: repeat(3, auto);
+    
+}
+
+.wordList{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    border-style: solid;
+}

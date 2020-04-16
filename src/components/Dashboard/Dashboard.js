@@ -31,9 +31,7 @@ componentDidMount(){
             <h2>{this.context.language.name} words to practice</h2>
             <h3>Total correct answers: {this.context.language.total_score}</h3>
             <div className='wordBox'>
-                <ul>
-                    <WordList />
-                </ul>
+                <WordList />
             </div>
             
             <Link to=''>Start Practicing</Link>
