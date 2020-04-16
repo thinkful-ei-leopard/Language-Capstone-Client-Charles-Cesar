@@ -9,7 +9,7 @@ export default class WordList extends React.Component{
       return (
         <ul>
             {this.context.words.map(word =>
-                 <li className='wordBox' key={word.original}> 
+                 <li className='wordListItem' key={word.original}> 
                     <div className='word'>
                         {word.original}
                     </div> 
